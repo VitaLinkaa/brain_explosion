@@ -1,0 +1,219 @@
+body {
+  background: url(../img/dendi.png) no-repeat center top / 100%;
+}
+
+
+.plate {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  cursor: pointer;
+  animation: move-plate 10s ease 3 forwards;
+}
+
+.plate::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(45deg);
+}
+
+.plate:checked {
+  opacity: 0;
+  counter-increment: list;
+}
+
+.score::after {
+  content: counter(list);
+  font-size: 25px;
+  color: blue;
+}
+
+.points {
+  font-family: 'McLaren',
+  cursive;
+  width: 100px;
+  height: 100px;
+  background-color: #fde910;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.points__text {
+  display: block;
+  font-family: 'McLaren',
+  cursive;
+}
+
+.plate-1 {
+  animation: move-plate-1 10s ease 3 forwards;
+}
+
+
+.plate-2 {
+  animation: move-plate-2 7s 2s ease 3 forwards;
+}
+
+.plate-3 {
+  animation: move-plate-3 8s 3s ease 3 forwards;
+}
+
+.plate-4 {
+  animation: move-plate-4 9s 4s ease 3 forwards;
+}
+
+.plate-5 {
+  animation: move-plate-5 7s 5s ease 3 forwards;
+}
+
+.plate-6 {
+  animation: move-plate-6 10s 15s ease 3 forwards;
+}
+
+
+@keyframes move-plate-1 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 80%;
+
+  }
+
+  100% {
+
+    left: 40%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+@keyframes move-plate-2 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 70%;
+  }
+
+  100% {
+    left: 60%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+
+
+@keyframes move-plate-3 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 90%;
+  }
+
+  100% {
+    left: 30%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+@keyframes move-plate-4 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 50%;
+  }
+
+  100% {
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+@keyframes move-plate-5 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 70%;
+  }
+
+  100% {
+    left: 100%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+@keyframes move-plate-5 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 50%;
+  }
+
+  100% {
+    left: 0%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+@keyframes move-plate-6 {
+  0% {
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%) rotateX(45deg);
+  }
+
+  50% {
+    bottom: 95%;
+  }
+
+  100% {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+
+
+marquee {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
